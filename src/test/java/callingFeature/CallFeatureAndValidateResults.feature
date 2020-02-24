@@ -2,7 +2,8 @@ Feature: calling another feature file
 
   Background:
 
-    * def result = call read('E:\\SeleniumWorkspaces\\SapientPracticeIntelliJ2\\SapientKarateExercise\\src\\test\\java\\requests\\GetUserDetails.feature')
+    # * def result = call read('E:\\SeleniumWorkspaces\\SapientPracticeIntelliJ2\\SapientKarateExercise\\src\\test\\java\\requests\\GetUserDetails.feature')
+    * def result = call read('..\\requests\\GetUserDetails.feature')
 
     * def myResponse = result.response
     * def users = myResponse.data
